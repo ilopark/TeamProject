@@ -33,6 +33,9 @@
           <a class="nav-link" href="${pageContext.request.contextPath }/notice/list.do">공지사항</a>
         </li>
         <li class="nav-item right-tab">
+          <a class="nav-link" href="${pageContext.request.contextPath }/gallery/list.do">책 리뷰</a>
+        </li>
+        <li class="nav-item right-tab">
           <a class="nav-link" href="${pageContext.request.contextPath }/shop/list1.do">전체 상품</a>
         </li>
         <li class="nav-item right-tab">
