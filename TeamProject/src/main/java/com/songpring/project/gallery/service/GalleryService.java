@@ -1,4 +1,4 @@
-package com.songpring.gallery.service;
+package com.songpring.project.gallery.service;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;

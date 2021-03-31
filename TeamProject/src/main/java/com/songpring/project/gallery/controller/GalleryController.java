@@ -1,4 +1,4 @@
-package com.songpring.gallery.controller;
+package com.songpring.project.gallery.controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.songpring.gallery.service.GalleryService;
 import com.songpring.project.gallery.dto.GalleryDto;
+import com.songpring.project.gallery.service.GalleryService;
 
 @Controller
 public class GalleryController {

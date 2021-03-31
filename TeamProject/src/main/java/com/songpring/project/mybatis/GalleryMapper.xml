@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="gallery">
-	<insert id="insert" parameterType="com.songpring.project.gallery.dto.GalleryDto">
+	<insert id="insert" parameterType="galleryDto">
 		INSERT INTO board_gallery
 		(num, writer, caption, imagePath, regdate)
 		VALUES(gallerysequence.NEXTVAL, #{writer}, #{caption}, #{imagePath},SYSDATE)
@@ -16,8 +16,8 @@
 			ORDER BY num DESC)
 		WHERE num=#{num}
 	</select>
-	<select id="getList" parameterType="com.songpring.project.gallery.dto.GalleryDto" 
-		resultType="com.songpring.project.gallery.dto.GalleryDto">
+	<select id="getList" parameterType="galleryDto" 
+		resultType="galleryDto">
 		SELECT *
 		FROM
 			(SELECT result1.*, ROWNUM AS rnum

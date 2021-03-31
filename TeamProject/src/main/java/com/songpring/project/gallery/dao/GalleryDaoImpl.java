@@ -1,4 +1,4 @@
-package com.sonpring.project.gallery.dao;
+package com.songpring.project.gallery.dao;
 
 import java.util.List;
 import org.apache.ibatis.session.SqlSession;

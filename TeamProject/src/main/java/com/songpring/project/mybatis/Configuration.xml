@@ -14,6 +14,7 @@
 		<typeAlias type="com.songpring.project.order.dto.OrderDto" alias="orderDto"/>
 		<typeAlias type="com.songpring.project.order.dto.OrderDetailDto" alias="orderDetailDto"/>
 		<typeAlias type="com.songpring.project.order.dto.OrderListDto" alias="orderListDto"/>
+		<typeAlias type="com.songpring.project.gallery.dto.GalleryDto" alias="galleryDto"/>
 	</typeAliases>
 	<mappers>
 		<mapper resource="com/songpring/project/mybatis/ShopMapper.xml"/>
@@ -21,5 +22,6 @@
 		<mapper resource="com/songpring/project/mybatis/NoticeMapper.xml"/>
 		<mapper resource="com/songpring/project/mybatis/ReviewMapper.xml"/>
 		<mapper resource="com/songpring/project/mybatis/QnAMapper.xml"/>
+		<mapper resource="com/songpring/project/mybatis/GalleryMapper.xml"/>
 	</mappers>
 </configuration>

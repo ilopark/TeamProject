@@ -1,4 +1,4 @@
-package com.songpring.gallery.service;
+package com.songpring.project.gallery.service;
 
 import java.io.File;
 import java.util.List;
@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.songpring.project.gallery.dao.GalleryDao;
 import com.songpring.project.gallery.dto.GalleryDto;
-import com.sonpring.project.gallery.dao.GalleryDao;
 
 
 
