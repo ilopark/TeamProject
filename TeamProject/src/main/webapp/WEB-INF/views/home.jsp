@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <title>/home.jsp</title>
 <jsp:include page="include/resource.jsp"></jsp:include>
@@ -84,6 +85,7 @@
 				<p class="card-text">${list[3].price } 원</p>
 			</div>
 		</div>
+		
 		<div class="col-6 col-md-4 col-lg-4">
 			<div class="card" style="width: 100%;">
 				<ul class="list-group list-group-flush">
@@ -93,6 +95,8 @@
 				</ul>
 			</div>
 		</div>
+		
+		
 	</div>
 </div>
 <jsp:include page="include/bottomnavbar.jsp"></jsp:include>
