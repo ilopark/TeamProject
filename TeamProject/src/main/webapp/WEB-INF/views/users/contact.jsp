@@ -103,7 +103,7 @@
 			// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
 			// marker.setMap(null);    
 		</script>
-		
+		<br />
 		<!-- 
 		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=APIKEY&libraries=services,clusterer,drawing"></script>
 		
@@ -118,7 +118,7 @@
 			
 			</script>
 		 -->
-</div>
+</div><br />
 <jsp:include page="../include/bottomnavbar.jsp"></jsp:include>
 </body>
 </html>
