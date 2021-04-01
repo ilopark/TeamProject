@@ -1,7 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<div class="container center">
+<style type="text/css">
+	#bottom{
+		background-color: #ececec;
+		width: 100%;
+	}
+</style>
+<div id="bottom" class="container center">
 	<div style="height: 20px"></div>
 	<div class="row">
 		<div class="col-md-4" align = "center">

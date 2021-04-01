@@ -183,4 +183,10 @@ public class UsersController {
       mView.setViewName("users/findpwdform2");
       return mView;
 	}
+	
+	@RequestMapping("/users/contact")
+	public String contact_page() {
+		return "users/contact";
+	}
+	
 }

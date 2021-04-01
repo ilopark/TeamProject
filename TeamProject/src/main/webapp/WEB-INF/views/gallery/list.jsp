@@ -66,6 +66,12 @@
 			transform: rotate(360deg);
 		}
 	}
+	p{
+		text-align: right;
+	}
+	h1{
+		text-align: center;
+	}
 </style>
 </head>
 <body>
@@ -73,9 +79,10 @@
 	<jsp:param value="gallery" name="thisPage"/>
 </jsp:include>
 <div class="container">
-	<a href="private/upload_form.do">사진 업로드 하러 가기</a><br/>
-	<a href="private/ajax_form.do">사진 업로드 하러 가기2</a>
-	<h1>겔러리 목록 입니다.</h1>
+	<p>
+		<a align="right" class="btn btn-primary"href="private/upload_form.do">리뷰 작성</a><br/>
+	</p>
+	<h1>리뷰 목록 입니다</h1><br />
 	<div class="row" id="galleryList">
 		<c:forEach var="tmp" items="${list }">
 			<div class="col-6 col-md-4 col-lg-3">
@@ -86,7 +93,7 @@
 						</div>
 					</a>
 					<div class="card-body">
-						<p class="card-text">${tmp.caption }</p>
+						<p class="card-text"><strong>제목 : </strong>${tmp.title }</p>
 						<p class="card-text">by <strong>${tmp.writer }</strong></p>
 						<p><small>${tmp.regdate }</small></p>
 					</div>

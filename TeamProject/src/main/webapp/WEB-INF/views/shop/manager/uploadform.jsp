@@ -23,6 +23,16 @@
 <body>
 <jsp:include page="../../include/navbar.jsp"></jsp:include>
 <div class="container">
+<form action="ajax_upload.do" method="post" id="ajaxForm" enctype="multipart/form-data">
+		<div class="form-group">
+			<label for="image">이미지</label>
+			<input type="file" class="form-control-file" name="image" id="image"
+				 accept=".jpg, .jpeg, .png, .JPG, .JPEG, .PNG" />
+		</div>
+	</form>
+	<div class="img-wrapper pagination justify-content-center">
+		<img id="bookMain"/>
+	</div>
 	<form action="upload.do" method="post" id="insertForm">
 		<input type="hidden" name="imagePath" id="imagePath" />
 		<div class="form-group">
@@ -70,17 +80,8 @@
 			<div class="invalid-feedback">형식을 맞춰주세요.</div>
 		</div>
 	</form>
-	<form action="ajax_upload.do" method="post" id="ajaxForm" enctype="multipart/form-data">
-		<div class="form-group">
-			<label for="image">이미지</label>
-			<input type="file" class="form-control-file" name="image" id="image"
-				 accept=".jpg, .jpeg, .png, .JPG, .JPEG, .PNG" />
-		</div>
-	</form>
 	<button class="btn btn-primary" id="submitBtn" onclick="submitContents(this);">등록</button>
-	<div class="img-wrapper pagination justify-content-center">
-		<img id="bookMain"/>
-	</div>
+	
 </div>
 <jsp:include page="../../include/bottomnavbar.jsp"></jsp:include>
 <!-- SmartEditor 에서 필요한 javascript 로딩  -->

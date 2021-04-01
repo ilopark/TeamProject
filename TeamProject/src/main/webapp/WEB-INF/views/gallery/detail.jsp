@@ -27,6 +27,7 @@
 	<div class="card mb-3">
 		<img class="card-img-top" src="${pageContext.request.contextPath }${dto.imagePath}"/>
 		<div class="card-body">
+			<p class="card-text"><strong>제목 : </strong>${dto.title }</p>
 			<p class="card-text">${dto.caption }</p>
 			<p class="card-text">by <strong>${dto.writer }</strong></p>
 			<p><small>${dto.regdate }</small></p>

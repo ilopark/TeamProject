@@ -3,13 +3,13 @@
 <mapper namespace="gallery">
 	<insert id="insert" parameterType="galleryDto">
 		INSERT INTO board_gallery
-		(num, writer, caption, imagePath, regdate)
-		VALUES(gallerysequence.NEXTVAL, #{writer}, #{caption}, #{imagePath},SYSDATE)
+		(num, writer, title, caption, imagePath, regdate)
+		VALUES(gallerysequence.NEXTVAL, #{writer}, #{title}, #{caption}, #{imagePath}, SYSDATE)
 	</insert>
 	<select id="getData" parameterType="int" resultType="com.songpring.project.gallery.dto.GalleryDto">
 		SELECT * 
 		FROM
-			(SELECT num, writer, caption, imagePath, regdate,
+			(SELECT num, writer, title, caption, imagePath, regdate,
 				LAG(num, 1, 0) OVER (ORDER BY num DESC) AS prevNum, 
 				LEAD(num, 1, 0) OVER (ORDER BY num DESC) AS nextNum 
 			FROM board_gallery 
@@ -22,7 +22,7 @@
 		FROM
 			(SELECT result1.*, ROWNUM AS rnum
 			FROM
-				(SELECT num,writer,caption,imagePath,regdate
+				(SELECT num, writer, title, caption, imagePath, regdate
 				FROM board_gallery
 				ORDER BY num DESC) result1) 
 		WHERE rnum BETWEEN #{startRowNum} AND #{endRowNum}

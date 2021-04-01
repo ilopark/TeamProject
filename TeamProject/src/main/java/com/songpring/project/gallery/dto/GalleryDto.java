@@ -5,6 +5,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class GalleryDto {
 	private int num;
 	private String writer;
+	private String title;
 	private String caption;
 	private String imagePath;
 	private String regdate;
@@ -15,11 +16,12 @@ public class GalleryDto {
 	private MultipartFile image;
 	//디폴트 생성자 
 	public GalleryDto() {}
-	public GalleryDto(int num, String writer, String caption, String imagePath, String regdate, int startRowNum,
+	public GalleryDto(int num, String writer, String title, String caption, String imagePath, String regdate, int startRowNum,
 			int endRowNum, int prevNum, int nextNum, MultipartFile image) {
 		super();
 		this.num=num;
 		this.writer=writer;
+		this.title=title;
 		this.caption=caption;
 		this.imagePath=imagePath;
 		this.regdate=regdate;
@@ -88,6 +90,12 @@ public class GalleryDto {
 	}
 	public void setImage(MultipartFile image) {
 		this.image = image;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
 	}
 	
 }
